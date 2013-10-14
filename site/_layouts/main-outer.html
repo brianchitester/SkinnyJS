@@ -20,6 +20,18 @@
   <script type='text/javascript' src='javascripts/responsive-modernizr.js'></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
 
+  <link rel="stylesheet" href="dist/css/jquery-menu.css"/>
+  <link rel="stylesheet" href="dist/css/jquery.menu.skin.example.css"/>
+  <script type="text/javascript" src="dist/jquery.hoverDelay.js"></script>
+  <script type="text/javascript" src="dist/jquery.menu.js"></script>
+  <script type="text/javascript" src="dist/jquery.menu.skin.example.js"></script>
+  <script>
+  $(function()
+  {
+    $("#pluginsMenu").dropDownMenu({ skin: "example" });
+  });
+  </script>
+
   <title>skinny.js</title>
 
   <meta name="description" content="Skinny JS">
@@ -38,67 +50,70 @@
         </div>
             
         <div class="main-nav">
-          <ul class="menu">
-            <li class="current_page_item"><a href="./" title="Home">Home</a></li>
-            <li class="page_item"><a href="download-builder.html">Download</a></li>
-            <li class="page_item"><a href="#" onclick="return false;">Documentation</a>
-              <ul class='children'>
-                <li class="page_item"><a href="#" onclick="return false;">Libraries</a>
-                  <ul class="children">
-                    <li class="page_item"><a href='date-parse.html'>date-parse</a></li>
+          <div class="menu">
+            <div class="menu-item"><a href="./" title="Home">Home</a></div>
+            <div class="menu-item"><a href="download-builder.html">Download</a></div>
+            <div class="menu-item" id="pluginsMenu">
+              <a href="#" onclick="return false;">Documentation</a>
+              <div class='menu-panel'>
+                <div class="menu-item">
+                  <a href="#" onclick="return false;">Libraries</a>
+                  <div class="menu-panel">
+                    <div class="menu-item"><a href='date-parse.html'>date-parse</a></div>
 
-                    <li class="page_item"><a href='jquery.clientRect.html'>jQuery.clientRect</a></li>
+                    <div class="menu-item"><a href='jquery.clientRect.html'>jQuery.clientRect</a></div>
 
-                    <li class="page_item"><a href='jquery.cookies.html'>jQuery.cookies</a></li>
+                    <div class="menu-item"><a href='jquery.cookies.html'>jQuery.cookies</a></div>
 
-                    <li class="page_item"><a href='jquery.css.html'>jQuery.css</a></li>
+                    <div class="menu-item"><a href='jquery.css.html'>jQuery.css</a></div>
 
-                    <li class="page_item"><a href='jquery.customEvent.html'>jQuery.customEvent</a></li>
+                    <div class="menu-item"><a href='jquery.customEvent.html'>jQuery.customEvent</a></div>
 
-                    <li class="page_item"><a href='jquery.delimitedString.html'>jQuery.delimitedString</a></li>
+                    <div class="menu-item"><a href='jquery.delimitedString.html'>jQuery.delimitedString</a></div>
 
-                    <li class="page_item"><a href='jquery.disableEvent.html'>jQuery.disableEvent</a></li>
+                    <div class="menu-item"><a href='jquery.disableEvent.html'>jQuery.disableEvent</a></div>
 
-                    <li class="page_item"><a href='jquery.hostIframe.html'>jQuery.hostIframe</a></li>
+                    <div class="menu-item"><a href='jquery.hostIframe.html'>jQuery.hostIframe</a></div>
 
-                    <li class="page_item"><a href='jquery.hoverDelay.html'>jQuery.hoverDelay</a></li>
+                    <div class="menu-item"><a href='jquery.hoverDelay.html'>jQuery.hoverDelay</a></div>
 
-                    <li class="page_item"><a href='jquery.htmlEncode.html'>jQuery.htmlEncode</a></li>
+                    <div class="menu-item"><a href='jquery.htmlEncode.html'>jQuery.htmlEncode</a></div>
 
-                    <li class="page_item"><a href='jquery.imageSize.html'>jQuery.imageSize</a></li>
+                    <div class="menu-item"><a href='jquery.imageSize.html'>jQuery.imageSize</a></div>
 
-                    <li class="page_item"><a href='jquery.isVisibleKeyCode.html'>jQuery.isVisibleKeyCode</a></li>
+                    <div class="menu-item"><a href='jquery.isVisibleKeyCode.html'>jQuery.isVisibleKeyCode</a></div>
 
-                    <li class="page_item"><a href='jquery.partialLoad.html'>jQuery.partialLoad</a></li>
+                    <div class="menu-item"><a href='jquery.partialLoad.html'>jQuery.partialLoad</a></div>
 
-                    <li class="page_item"><a href='jquery.postMessage.html'>jQuery.postMessage</a></li>
+                    <div class="menu-item"><a href='jquery.postMessage.html'>jQuery.postMessage</a></div>
 
-                    <li class="page_item"><a href='jquery.proxyAll.html'>jQuery.proxyAll</a></li>
+                    <div class="menu-item"><a href='jquery.proxyAll.html'>jQuery.proxyAll</a></div>
 
-                    <li class="page_item"><a href='jquery.msAjax.html'>jQuery.msAjax</a></li>
+                    <div class="menu-item"><a href='jquery.msAjax.html'>jQuery.msAjax</a></div>
 
-                    <li class="page_item"><a href='jquery.ns.html'>jQuery.ns</a></li>
+                    <div class="menu-item"><a href='jquery.ns.html'>jQuery.ns</a></div>
 
-                    <li class="page_item"><a href='jquery.queryString.html'>jQuery.queryString</a></li>
+                    <div class="menu-item"><a href='jquery.queryString.html'>jQuery.queryString</a></div>
 
-                    <li class="page_item"><a href='jquery.scrollAnchor.html'>jQuery.scrollAnchor</a></li>
+                    <div class="menu-item"><a href='jquery.scrollAnchor.html'>jQuery.scrollAnchor</a></div>
 
-                    <li class="page_item"><a href='jquery.uncomment.html'>jQuery.uncomment</a></li>
+                    <div class="menu-item"><a href='jquery.uncomment.html'>jQuery.uncomment</a></div>
 
-                    <li class="page_item"><a href='jquery.url.html'>jQuery.url</a></li>
+                    <div class="menu-item"><a href='jquery.url.html'>jQuery.url</a></div>
 
-                  </ul>
-                </li>
-                <li class="page_item"><a href="#" onclick="return false;">UI Components</a>
-                  <ul class="children">
-                    <li class="page_item"><a href='jquery.menu.html'>jQuery.menu</a></li>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <a href="#" onclick="return false;">UI Components</a>
+                  <div class="menu-panel">
+                    <div class="menu-item"><a href='jquery.menu.html'>jQuery.menu</a></div>
 
-                    <li class="page_item"><a href='jquery.modalDialog.html'>jQuery.modalDialog</a></li>
-                </ul>
-              </li>
-              </ul>
-            </li>
-          </ul>
+                    <div class="menu-item"><a href='jquery.modalDialog.html'>jQuery.modalDialog</a></div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
       </div>                
                    
     </div>

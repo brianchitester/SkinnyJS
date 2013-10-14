@@ -103,6 +103,10 @@ module.exports = function(grunt)
                         expand: true,
                         src: ["./css/jquery.modalDialog.skins.less"],
                         dest: "dist/"
+                    },
+                    {
+                        src: ["./css/*.css"],
+                        dest: "dist/"
                     }
                 ]
             },
@@ -373,6 +377,8 @@ module.exports = function(grunt)
     grunt.registerTask("docs", ["mkdir:docco", "docco", "docco-add-links", "copy:doccoFix"]);
 
     grunt.registerTask("site", ["default", "compress", "sitePages", "docs", "copy:deploy"]);
+
+    grunt.registerTask("siteNoVerify", ["build", "compress", "sitePages", "docs", "copy:deploy"]);
 
     grunt.registerTask("sitePages", ["jekyll", "string-replace:site", "copy:distSite"]);
 };
