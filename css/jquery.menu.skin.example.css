@@ -1,47 +1,76 @@
 ﻿/* Note: This CSS is specially crafted to work in IE6 (by avoiding selectors which target two classes on the same element, i.e. ".class1.class2"). */
 
-.menu-skin-basic
+.menu-skin-example
 {
-    background-image:url(/vp/images/b11/common/page-bg/top-nav/sr1-sprite.png);
-    clear:both;
-    width:100%;
-    position:relative;
+    background-color: #585858;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
+    background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+    background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+    background-image: linear-gradient(top, #585858, #3d3d3d);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
+
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    position: relative;
+    height: 40px;
 }
 
-.menu-skin-basic .menu-item
+.menu-skin-example .menu-item
 {
-    color:#4d4d4f;
+    color: #4d4d4f;
+    height: 40px;
 }
 
-.menu-skin-basic .menu-item a
+.menu-skin-example .menu-item a
 {
-    padding:5px 10px 5px 10px;
+    padding: 10px;
 }
 
-.menu-skin-basic .menu-item-with-submenu
+.menu-skin-example .menu-item-with-submenu
 {
-    background-image:url(/vp/images/b09/common/button/graphical/arrow-rt-disabled.png);
+    /*background-image:url(/vp/images/b09/common/button/graphical/arrow-rt-disabled.png);
     background-position:right center;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat;*/
 }
 
-.menu-skin-basic .menu-item-top
+.menu-skin-example .menu-item-top
 {
-    border-right:1px #054376 solid;
-    border-left:1px #96c4e5 solid;
+    border-right:1px #666 solid;
     color:#fff;
     font-size:12px;
     font-weight:bold;
     background-image:none; /* prevent the submenu 'arrow' from showing in the top nav */
 }
 
-.menu-skin-basic .menu-item-top a,
-.menu-skin-basic .menu-item-top a:link,
-.menu-skin-basic .menu-item-top a:visited
+.menu-skin-example .menu-item-top a,
+.menu-skin-example .menu-item-top a:link,
+.menu-skin-example .menu-item-top a:visited
 {
 	color:#fff;
 	text-decoration:none;
 	display:block;
+}
+
+.menu-skin-example .menu-item-top.menu-item-with-submenu.hover,
+.menu-skin-example .menu-item-top:hover
+{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+
+
+    background-color: #808080;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#363636));
+    background-image: -webkit-linear-gradient(top, #808080, #363636);
+    background-image: -moz-linear-gradient(top, #808080, #363636);
+    background-image: -ms-linear-gradient(top, #808080, #363636);
+    background-image: -o-linear-gradient(top, #808080, #363636);
+    background-image: linear-gradient(top, #808080, #363636);
+    color: #ffffff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#363636);
 }
 
 /* 
@@ -50,12 +79,12 @@ HACK: Prevent a flash of unstyled content:
 target all items, and then remove the attributes for lower level items.
 */
 
-.menu-skin-basic .menu-item
+.menu-skin-example .menu-item
 {
 	float:left;
 }
 
-.menu-skin-basic .menu-item .menu-item
+.menu-skin-example .menu-item .menu-item
 {
 	float:none;
 }
@@ -64,7 +93,7 @@ target all items, and then remove the attributes for lower level items.
 END HACK
 */
 
-.menu-skin-basic .menu-panel
+.menu-skin-example .menu-panel
 {
     border:1px #ccc solid;
     background-color:white;
@@ -77,47 +106,47 @@ END HACK
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.menu-skin-basic a.menu-item 
+.menu-skin-example a.menu-item 
 {
     display:block;
 }
 
-.menu-skin-basic .hover 
+.menu-skin-example .hover 
 {
     background-color:#4d4d4f;
     color:white;
 }
 
-.menu-skin-basic .hover a,
-.menu-skin-basic a.hover
+.menu-skin-example .hover a,
+.menu-skin-example a.hover
 {
     color:white;
     text-decoration:none;
 }
 
-.menu-skin-basic .menu-panel a, 
-.menu-skin-basic .menu-panel a:link, 
-.menu-skin-basic .menu-panel a:visited, 
-.menu-skin-basic .menu-panel a.hover,
-.menu-skin-basic .menu-panel .hover
+.menu-skin-example .menu-panel a, 
+.menu-skin-example .menu-panel a:link, 
+.menu-skin-example .menu-panel a:visited, 
+.menu-skin-example .menu-panel a.hover,
+.menu-skin-example .menu-panel .hover
 {
      color: #4d4d4f;
 }
 
-.menu-skin-basic .menu-panel .menu-item-with-submenu a
+.menu-skin-example .menu-panel .menu-item-with-submenu a
 {
 	color:#4d4d4f;
 }
 
-.menu-skin-basic .menu-panel .hover .nohover a,
-.menu-skin-basic .menu-panel .hover .nohover
+.menu-skin-example .menu-panel .hover .nohover a,
+.menu-skin-example .menu-panel .hover .nohover
 {
 	color:#4d4d4f;
 }
 
-.menu-skin-basic .menu-panel a.hover,
-.menu-skin-basic .menu-panel .hover,
-.menu-skin-basic .menu-panel .hover a
+.menu-skin-example .menu-panel a.hover,
+.menu-skin-example .menu-panel .hover,
+.menu-skin-example .menu-panel .hover a
 {
 	color:#ffffff;
 }
