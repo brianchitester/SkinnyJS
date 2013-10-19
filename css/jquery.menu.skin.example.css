@@ -38,28 +38,28 @@
 
 .menu-skin-example .menu-item-top
 {
-    border-right:1px #666 solid;
-    color:#fff;
-    font-size:12px;
-    font-weight:bold;
-    background-image:none; /* prevent the submenu 'arrow' from showing in the top nav */
+    border-right: 1px #666 solid;
+    color: #fff;
+    background-image: none; /* prevent the submenu 'arrow' from showing in the top nav */
 }
 
 .menu-skin-example .menu-item-top a,
 .menu-skin-example .menu-item-top a:link,
 .menu-skin-example .menu-item-top a:visited
 {
-	color:#fff;
-	text-decoration:none;
-	display:block;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .menu-skin-example .menu-item-top.menu-item-with-submenu.hover,
 .menu-skin-example .menu-item-top:hover
 {
-    color:#fff;
-    text-decoration:none;
-    display:block;
+    color: #fff;
+    text-decoration: none;
+    display: block;
 
 
     background-color: #808080;
@@ -99,7 +99,6 @@ END HACK
     background-color:white;
     width:250px;
     color:#666;
-    font-weight:normal;
     
     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
@@ -130,7 +129,9 @@ END HACK
 .menu-skin-example .menu-panel a.hover,
 .menu-skin-example .menu-panel .hover
 {
-     color: #4d4d4f;
+    color: #4d4d4f;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .menu-skin-example .menu-panel .menu-item-with-submenu a
